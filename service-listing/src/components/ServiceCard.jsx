@@ -1,22 +1,11 @@
 import React from 'react'
 
-const ServiceCard = () => {
-    const services = [
-        {
-            title: "Web Development",
-            description: "It is the creation of a Web application"
-        },
-        {
-            title: "Designing",
-            description: "It brings the design to life"
-        }
-    ]
+const ServiceCard = ({title,description}) => {
 
     return (
         <div>
-            {services.map((service)=>(
-                key={service}, service={service}
-            ))};
+            <h2>{title}</h2>
+            <p>{description}</p>
         </div>
     )
 }
